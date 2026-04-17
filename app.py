@@ -29,6 +29,12 @@ def index():
 
     return render_template('index.html', weather=weather_data, error=error_message)
 
+@app.route('/loaderio-2a09fd170d346b1cef29707f05afb011.txt')
+@app.route('/loaderio-2a09fd170d346b1cef29707f05afb011.html')
+@app.route('/loaderio-2a09fd170d346b1cef29707f05afb011/')
+def loaderio():
+    return "loaderio-2a09fd170d346b1cef29707f05afb011"
+
 if __name__ == '__main__':
     # Convert the DEBUG environment variable to a boolean for Flask
     debug_mode = str(is_debug).lower() in ("true", "1", "t")
